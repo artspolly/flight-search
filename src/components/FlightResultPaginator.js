@@ -49,7 +49,6 @@ convertToTime(unix_timestamp){
                     + "&dateFrom=" + new Intl.DateTimeFormat('en-GB').format(Date.parse(fDate))
                     + "&dateTo=" +  new Intl.DateTimeFormat('en-GB').format(Date.parse(fDate))
                     + "&limit=" + this.state.perPage+ "&offset=" +this.state.offset; 
-    console.log(params);
     fetch("https://api.skypicker.com/flights?"+params)
          .then(res => res.json())
          .then(
