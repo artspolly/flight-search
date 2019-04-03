@@ -73,7 +73,7 @@ export class FlightSearch extends React.Component {
                         id="fDate"
                         ref={input => this._fDate = input}
                         required></input>
-                <button>Search</button>
+                <button>Search!</button>
             </form>
         );      
     }
